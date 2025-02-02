@@ -6,3 +6,4 @@ sqlparse==0.3.1
 gunicorn
 dj_database_url
 python-dotenv
+psycopg2-binary
