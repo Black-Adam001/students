@@ -7,3 +7,4 @@ gunicorn
 dj_database_url
 python-dotenv
 psycopg2-binary
+whitenoise
