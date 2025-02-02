@@ -1,12 +1,9 @@
-"""
-by sumit kumar
-written by fb.com/sumit.luv
-
-"""
 from django.contrib import admin
 from django.urls import path
 from school import views
 from django.contrib.auth.views import LoginView,LogoutView
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -81,3 +78,6 @@ urlpatterns = [
     path('aboutus', views.aboutus_view),
     path('contactus', views.contactus_view),
 ]
+
+
+urlpatterns += staticfiles_urlpatterns()
